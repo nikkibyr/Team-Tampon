@@ -1,0 +1,90 @@
+body {
+    display: flex;
+    flex-direction: column;
+    padding-top: 56px;
+    min-height: 100vh;
+}
+
+header {
+    display: none;
+}
+
+nav a {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: pink;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h2 {
+    border: 4px solid pink;
+    display: flex;
+    width: auto;
+    font-size: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 250px;
+    margin-bottom: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+  
+img {
+    max-width: 100%;
+}
+  
+.image {
+    flex-basis: 40%;
+    padding: 20px;
+}
+  
+.quote {
+    font-size: 18px;
+    padding-left: 20px;
+}
+
+.content {
+    padding: 20px;
+    margin: 50px;
+}
+
+.source {
+    font-style: italic;
+    font-size: 10px;
+}
+
+.text a {
+    color: pink;
+}
+
+.navigate {
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+    text-decoration: underline;
+    padding-right: 20px;
+}
+
+.navigate a {
+    color: pink;
+}
+
+footer {
+    display: flex;
+    justify-content:center;
+    align-items: flex-end;
+    font-size: x-small;
+}
