@@ -73,10 +73,10 @@
           </br>
 
           <h3>Follow us on social media</h3>
-          <!-- Add icon library -->
+          
           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-        <!-- Add icons -->
+        
         <a href="#" class="fa fa-facebook"></a>
         <a href="#" class="fa fa-twitter"></a>
         <a href="#" class="fa fa-instagram"></a>
@@ -292,7 +292,7 @@ body {
 
 
 
-  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  /* Responsive layout - 2 columns stack on each other when screen size changes */
   @media screen and (max-width: 600px) {
     .column, input[type=submit] {
       width: 100%;
@@ -317,10 +317,10 @@ var amountDonated = 0;
 var goal = 500;
 
 $form.on('submit', function (e) {
-  // Stop form default behavior
+  
   e.preventDefault();
   
-  // Get donation amount
+  // Donation amount
   var donation = parseInt($input.val());
   var percentage;
   
