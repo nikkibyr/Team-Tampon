@@ -1,0 +1,369 @@
+
+<head>
+   
+    
+    <script src="./scripts.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    
+</head>
+
+<body class="bg-dark text-light">
+
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand text-dark" href="">Map</a>
+    <a class="navbar-brand text-dark" href="">Highlights</a>
+    <a class="navbar-brand text-dark" href="">Gallery</a>
+    <a class="navbar-brand text-dark" href="">Resources</a>
+    <a class="navbar-brand text-dark" href="../contact.html">Contact</a>
+</nav>
+
+<div class="container">
+  <div style="text-align:left">
+    <h1>Keep in touch and get involved!</h1>
+    <h2>Keep in touch and get involved!</h2>
+    
+  </div>
+  <div class="row">
+    <div class="column">
+    
+        <form name="myForm" action="/file.php">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        <label for="fname">Email address</label>
+        <input type="text" id="email" name="emailad" placeholder="Your email address..">
+        <label for="email">Country</label>
+        <select id="country" name="country">
+          <option value="england">England</option>
+          <option value="scotland">Scotland</option>
+          <option value="wales">Wales</option>
+          <option value="nireland">Northern Ireland</option>
+        </select>
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write to us..." style="height:170px"></textarea>
+        <input type="submit" value="Submit">
+        
+
+      </form>
+     
+    </div>
+
+    <div class="column">
+        
+        <div class="donations">
+            <div class="donations__progress-bar"></div>
+            <h4 class="donations__progress">
+                <h3>Every donation counts</h3> 
+                £<span class="donations__amount">0</span> / £500</h2>
+            <div class="donations__text">
+              Help us fundraise £500 per month to support the presented
+              <span class="donations__donors">3</span>
+              charities and organisations with their valuable work.
+            </div>
+            <form class="donations__form">
+              <span class="donations__input-icon">£</span>
+              <input class="donations__input" type="number" value="10" title="£"/>
+              <input type="submit" class="donations__submit", value="Submit"/>
+            </form>
+          </div>
+          <br> 
+          </br>
+          <br>
+          </br>
+
+          <h3>Follow us on social media</h3>
+          <!-- Add icon library -->
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <!-- Add icons -->
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-instagram"></a>
+        <a href="#" class="fa fa-youtube"></a>
+    </div>
+    
+  
+ 
+
+</div>
+
+<footer>Team Tampon - Final Project 2022 - Made Possible by Code First Girls</footer>
+
+</body>
+</head>
+
+<style>
+
+  
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+  background-color: beige(245, 185, 237);
+  font-family: "Poppins", sans-serif;
+        }
+
+  nav a {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: pink;
+    text-align: center;
+    text-transform: uppercase;
+        }
+
+
+  /* Style inputs */
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid rgb(87, 4, 4);
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    border-radius: 8px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+  }
+  
+  input[type=submit] {
+    background-color: #aa043b;
+    color: rgb(255, 255, 255);
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+
+  
+
+  }
+
+
+  input[type=submit]:hover {
+
+    background-color: #8a252a;
+  }
+  
+  /* Style the container/contact section */
+  .container {
+    border-radius: 5px;
+    background-color: #e46da4;
+    padding: 10px;
+  }
+  
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+  
+  /* Style all icons */
+.fa {
+  padding: 10px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.fa:hover {
+  opacity: 1;
+}
+
+
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+  border-radius: 8px;
+}
+
+/* Twitter */
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+  border-radius: 8px;
+}
+  
+
+/*Instagram */
+.fa-instagram {
+    background: #ee5555;
+    color: white;
+    border-radius: 8px;
+
+}
+
+/*Youtube */
+.fa-youtube {
+    background: #ff0000;
+    color: white;
+    border-radius: 8px;
+
+
+/* Style donation */
+
+* { box-sizing: border-box; }
+body {
+  background: #1f1f1f;
+  font-family: arial;
+}
+
+.donations {
+  position: relative;
+  border: 1px solid #eee;
+  border-radius: 3px;
+  padding: 2em;
+  max-width: 400px;
+  margin: 10em auto;
+  background: white;
+  overflow: hidden;
+}
+
+.donations__progress-bar {
+  background: orange;
+  height: 1em;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate3D(-100%, 0, 0);
+  width: 100%;
+  transition: transform 500ms ease;
+}
+
+
+.donations__progress {
+  text-align: center;
+}
+
+
+.donations__text {
+  margin-bottom: 1em;
+  line-height: 1.5;
+}
+
+
+
+.donations__form {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-size: 1.3em;
+}
+
+.donations__input,
+.donations__submit,
+
+
+.donations__submit {
+  background: #1cbc2c;
+  color: white;
+  
+}
+
+
+.donations__input {
+  border: 1px solid #eee;
+  padding-left: 1em;
+}
+
+.donations__input-icon {
+  position: absolute;
+  color: gray;
+  line-height: 1.3;
+  padding: 0.5em 0.3em;
+  pointer-events: none;
+}
+
+
+
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+  
+</style>
+
+
+
+<script>
+var $form = $('.donations__form')
+var $input = $('.donations__input')
+var $sumbit = $('.donations__submit')
+var $reset = $('.donations__reset')
+var $progress = $('.donations__amount')
+var $progressBar = $('.donations__progress-bar')
+
+
+var amountDonated = 0;
+var goal = 500;
+
+$form.on('submit', function (e) {
+  // Stop form default behavior
+  e.preventDefault();
+  
+  // Get donation amount
+  var donation = parseInt($input.val());
+  var percentage;
+  
+  // Update State
+  
+  amountDonated += donation;
+  percentage = 100 - ((amountDonated / goal) * 100)
+  
+  // Update DOM
+  
+  $progress.text(amountDonated.toLocaleString())
+  
+  if (amountDonated >= goal) {
+    $progressBar.css({
+      'background': '#1cbc2c',
+      'transform': 'none'
+    })
+  }
+  $progressBar.css(
+    'transform',
+    `translate3D(-${percentage}%, 0, 0)`
+  )
+  
+})
+
+$reset.on('click', function (e) {
+  e.preventDefault()
+  
+  
+  // Reset DOM
+
+  $progress.text(amountDonated.toLocaleString())
+  $progressBar.css({
+    'background': 'orange',
+    'transform': 'translate3D(-100%, 0, 0)'
+  })
+})
+
+
+
+
+                                   
+
+</script>
+
