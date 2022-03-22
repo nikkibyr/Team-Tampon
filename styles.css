@@ -87,8 +87,8 @@ ul {
 }
 
 footer {
-    display: flex;
-    justify-content:center;
-    align-items: flex-end;
-    font-size: x-small;
+    text-align: center;
+    padding: 3px;
+    background-color: rgb(233, 122, 196);
+    color: white;
 }
