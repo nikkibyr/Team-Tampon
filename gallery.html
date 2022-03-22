@@ -1,0 +1,202 @@
+<header>
+    <h1>
+        Period Poverty Photo Gallery
+    </h1>
+</header>
+
+<head>
+    <script src="./scripts.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+<body class="bg-dark text-light">
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand text-dark" href="">Map</a>
+    <a class="navbar-brand text-dark" href="">Highlights</a>
+    <a class="navbar-brand text-dark" href="">Gallery</a>
+    <a class="navbar-brand text-dark" href="">Resources</a>
+    <a class="navbar-brand text-dark" href="">Contact</a>
+</nav>
+   
+<body>
+    <div class="border">
+     
+      <div class="mainphoto">
+        <div class="title">
+          <h1 class="judul">Period Poverty Art</h1>
+          <p class="text">Artwork challenging the taboos surrounding periods and lack of financial means to support those who need it.</p>
+        </div>
+     
+        <div class="imgsrc">
+          <img src="period poverty art 1.jpg" class="prev">
+        </div>
+      </div>
+     
+      <div class="thumbnail">
+        <img src="period poverty art 2.jpg" class="thumb">
+     
+        <img src="period poverty art 3.jpg" class="thumb">
+     
+        <img src="period poverty art 4.jpg" class="thumb">
+     
+        <img src="period poverty art 5.jpg" class="thumb">
+     
+        <img src="period poverty art 6.png" class="thumb">
+     
+        <img src="period poverty art 7.jpg" class="thumb">
+
+        <img src="period poverty art 8.jpg" class="thumb">
+
+        <img src="period poverty art 9.jpg" class="thumb">
+     
+        <img src="period poverty art 10.jpg" class="thumb">
+      </div>
+    </div>
+    </body>
+
+    <style>
+        nav a {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: pink;
+    text-align: center;
+    text-transform: uppercase;
+        }
+        
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+        }
+         
+        body {
+          text-align: center;
+          background-color: rgb(245, 220, 239);
+          font-family: "Poppins", sans-serif;
+        }
+         
+        .border {
+          margin: 3em auto;
+          width: 610px;
+          border: solid white 5px;
+          border-radius: 30px;
+          box-shadow: 5px 5px 25px rgba(179, 43, 43, 0.5);
+          overflow: hidden;
+        }
+        .border .thumbnail {
+          display: flex;
+          flex-wrap: wrap;
+        }
+        .border .thumbnail .thumb {
+          height: 200px;
+          width: 200px;
+          transition: all 0.2s;
+          object-fit: cover;
+          cursor: pointer;
+        }
+        .border .thumbnail .thumb:hover {
+          box-shadow: 3px 3px 20px;
+          opacity: 0.8;
+        }
+         
+        .mainphoto {
+          position: relative;
+          width: 600px;
+          height: 400px;
+          overflow: hidden;
+        }
+        .mainphoto:hover .judul {
+          transform: translateY(80px);
+        }
+        .mainphoto:hover .title {
+          background: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.3) 30%, rgba(0, 0, 0, 0.3) 70%, rgba(0, 0, 0, 0.8) 100%);
+          opacity: 1;
+        }
+        .mainphoto:hover .text {
+          transform: translateY(-150px);
+        }
+        .mainphoto .prev {
+          object-fit: cover;
+          width: 600px;
+          height: 400px;
+        }
+        .mainphoto .title {
+          margin: auto;
+          overflow: hidden;
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          transition: all 0.3s ease;
+          opacity: 0;
+          display: flex;
+          flex-direction: column;
+        }
+        .mainphoto .title .judul {
+          color: white;
+          padding: 20px;
+          margin-top: -40px;
+          transition: all 0.3s ease;
+        }
+        .mainphoto .title .text {
+          color: white;
+          margin-top: 350px;
+          padding: 20px;
+          transition: all 0.35s ease 0.4s;
+        }
+         
+        @keyframes fade {
+          to {
+            opacity: 1;
+          }
+        }
+        .effect {
+          opacity: 0;
+          animation: fade 0.2s forwards;
+        }
+         
+        .active {
+          opacity: 0.5;
+        }
+         
+        </style>
+
+<script>
+    const border = document.querySelector(".border");
+    const preview = document.querySelector(".prev");
+    const active = document.querySelectorAll(".thumb");
+     
+    border.addEventListener("click", function (e) {
+      if (e.target.className == "thumb") {
+        preview.src = e.target.src;
+        preview.classList.add("effect");
+     
+        setTimeout(function () {
+          preview.classList.remove("effect");
+        }, 100);
+     
+        active.forEach(function (thumb) {
+          if (thumb.classList.contains("active")) {
+            thumb.classList.remove("active");
+          }
+        });
+     
+        e.target.classList.add("active");
+      }
+    });
+    </script>
+
+<footer>
+    <p>Hey: follow us on social media:</p>
+    <p><a href="periodpoverty@gmail.com">periodpoverty@gmail.com</a></p>
+  </footer>
+  <style>
+    footer {
+      text-align: center;
+      padding: 3px;
+      background-color: rgb(233, 122, 196);
+      color: white;
+    }
+    </style>
+
